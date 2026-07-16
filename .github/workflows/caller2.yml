@@ -1,4 +1,4 @@
-name: Second Workflow
+name: Second Workflow stage
 
 on:
   push:
@@ -8,6 +8,6 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/main.yml
+    uses: ./.github/workflows/reuseable.yml
     with:
       print: "testing, sample, code"
